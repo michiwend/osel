@@ -1,4 +1,4 @@
-from tramsalat.movement import Arrival, Departure
+from osel.movement import Arrival, Departure
 
 import lxml
 import urllib

@@ -1,8 +1,8 @@
 import urllib
 import lxml
 
-from tramsalat.line import Line
-from tramsalat.stop import Stop
+from osel.line import Line
+from osel.stop import Stop
 
 class TripRequestParser(object):
     """

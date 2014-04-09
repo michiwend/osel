@@ -1,7 +1,7 @@
 import lxml
 import urllib
 
-from tramsalat.line import Line
+from osel.line import Line
 
 class Movements(object):
     """
