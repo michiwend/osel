@@ -1,4 +1,4 @@
-from osel.movement import Arrival, Departure
+from osel.departure_arrival import Arrival, Departure
 
 import lxml
 import urllib

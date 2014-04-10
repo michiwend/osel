@@ -3,44 +3,44 @@ import urllib
 
 from osel.line import Line
 
-class Movements(object):
+class DepartureArrival(object):
     """
-    Represents an arrival or a reparture
+    Represents an arrival or a departure
     """
     def __init__(self):
         self._date = None
         self._line = None
 
-class MovementList(object):
+class DepartureArrivalList(object):
     """
-    Serves ass a result for a call to
+    Serves as a result for a call to
     get_arrivals or get_departures.
     Contains shit
     """
     def __init__(self):
-        self.movements = []
+        self.dep_arr = []
     
-    def get_latest_movement(self):
+    def get_latest(self):
         pass
 
-    def get_earliest_movement(self):
+    def get_earliest(self):
         pass
 
     def get_later(self, hours=3):
         """
-        returns movements until n hours later than
+        returns departures / arrivals from n hours later than
         the last search request
         """
         pass
     
     def get_earlier(self, hours=3):
         """
-        returns movements from n hours earlier than the
-        last search request
+        returns departures / arrivals from n hours earlier than
+        the last search request
         """
         pass
 
-class Arrival(Movements):
+class Arrival(DepartureArrival):
     @staticmethod
     def get_arrivals(stop, data):
         """
@@ -49,9 +49,9 @@ class Arrival(Movements):
         pass
 
     def __init__(self):
-        Movements.__init__(self)
+        DepartureArrival.__init__(self)
 
-class Departure(object):
+class Departure(DepartureArrival):
     @staticmethod
     def get_departures(stop, date):
         """
@@ -60,4 +60,4 @@ class Departure(object):
         pass
 
     def __init__(self):
-        Movements.__init__(self)
+        DepartureArrival.__init__(self)
