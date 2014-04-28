@@ -7,6 +7,9 @@ class EFAProvider(object):
         self._network       = network
         self._network_name  = network_name
         self._api_base      = api_base
+        self._sf_endpoint   = 'XML_STOPFINDER_REQUEST'
+        self._dm_endpoint   = 'XML_DM_REQUEST'
+        self._tr_endpoint   = 'XML_TRIP_REQUEST'
 
     def get_region(self):
         return self._region
@@ -20,6 +23,14 @@ class EFAProvider(object):
     def get_network_name(self):
         return self._network_name
 
+    def get_sf_endpoint(self):
+        return self._sf_endpoint
+
+    def get_dm_endpoint(self):
+        return self._dm_endpoint
+
+    def get_tr_endpoint(self):
+        return self._tr_endpoint
 
 
 
