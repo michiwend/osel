@@ -47,8 +47,8 @@ class AVV(EFAProvider):
 class MVV(EFAProvider):
     def __init__(self):
         super().__init__(
-                region       = 'München'
-                network      = 'MVV'
-                network_name = 'Münchner Verkehrs- und Tarifverbund GmbH'
+                region       = 'München',
+                network      = 'MVV',
+                network_name = 'Münchner Verkehrs- und Tarifverbund GmbH',
                 api_base     = 'http://efa.mvv-muenchen.de/mobile/'
                 )
