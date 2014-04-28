@@ -1,6 +1,4 @@
-
-
-class Provider(object):
+class EFAProvider(object):
     '''
     represents a public transport provider
     '''
@@ -24,7 +22,8 @@ class Provider(object):
 
 
 
-class AVV(Provider):
+
+class AVV(EFAProvider):
     def __init__(self):
         super().__init__(
                 region       = 'Augsburg',
@@ -35,7 +34,7 @@ class AVV(Provider):
     return
 
 
-class MVV(Provider):
+class MVV(EFAProvider):
     def __init__(self):
         super().__init__(
                 region       = 'München'
