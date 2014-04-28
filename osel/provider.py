@@ -8,16 +8,16 @@ class EFAProvider(object):
         self._network_name  = network_name
         self._api_base      = api_base
 
-    def get_region():
+    def get_region(self):
         return self._region
-    
-    def get_api_base():
+
+    def get_api_base(self):
         return self._api_base
 
-    def get_network():
+    def get_network(self):
         return self._network
 
-    def get_network_name():
+    def get_network_name(self):
         return self._network_name
 
 
@@ -31,7 +31,6 @@ class AVV(EFAProvider):
                 network_name = 'Augsburger Verkehrsverbund GmbH',
                 api_base     = 'http://efa.avv-augsburg.de/avv/'
                 )
-    return
 
 
 class MVV(EFAProvider):
@@ -42,4 +41,3 @@ class MVV(EFAProvider):
                 network_name = 'Münchner Verkehrs- und Tarifverbund GmbH'
                 api_base     = 'http://efa.mvv-muenchen.de/mobile/'
                 )
-

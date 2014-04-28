@@ -1,7 +1,12 @@
-import lxml
-import urllib
-
 from osel.line import Line
+#from osel.stop import Stop
+import datetime
+
+
+class DMRequestParser(object):
+    def __init__(self):
+        pass
+
 
 class DepartureArrival(object):
     """
@@ -19,7 +24,7 @@ class DepartureArrivalList(object):
     """
     def __init__(self):
         self.dep_arr = []
-    
+
     def get_latest(self):
         pass
 
@@ -32,7 +37,7 @@ class DepartureArrivalList(object):
         the last search request
         """
         pass
-    
+
     def get_earlier(self, hours=3):
         """
         returns departures / arrivals from n hours earlier than

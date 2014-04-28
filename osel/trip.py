@@ -1,5 +1,5 @@
 import urllib
-import lxml
+from lxml import etree
 
 from osel.line import Line
 from osel.stop import Stop
@@ -20,7 +20,7 @@ class TripList(object):
     def __init__(self):
         self._trips = []
         self._session_id = 0
-    
+
     def get_later(self):
         """
         Get later trips
@@ -44,13 +44,14 @@ class Trip(object):
         Gets a bunch of trips from teh internetz
         """
         pass
-    
+
     def __init__(self):
         self._parttrips = []
-    
+
 class PartialTrip(object):
     """
-    Represents a Partial trip from one stop to
+
+ Represents a Partial trip from one stop to
     another as a list of several stops. 8===D~~~
     """
     def __init__(self):
